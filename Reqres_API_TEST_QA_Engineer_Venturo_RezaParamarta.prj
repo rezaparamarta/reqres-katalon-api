@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+   <description>Test 1&#xd;
+Open the url https://reqres.in/. Create test suite with WebService type using Katalon Studio&#xd;
+and integrate it with Github for below endpoints and make it as automate:&#xd;
+a. GET list users (using request: /api/users?page=1)&#xd;
+b. GET single user&#xd;
+c. PUT update&#xd;
+d. POST register successful (email value taken from GET single user response)&#xd;
+Note: Use Global Variable as part of the test script.</description>
+   <name>Reqres_API_TEST_QA_Engineer_Venturo_RezaParamarta</name>
+   <tag></tag>
+   <UUID>4392a6a6-8321-4db4-be9a-1ed3b6210d4f</UUID>
+   <createdEdition>ENTERPRISE</createdEdition>
+   <createdVersion>10.0.1</createdVersion>
+   <freeLicense>false</freeLicense>
+   <migratedVersion>5.9.0</migratedVersion>
+   <modifiedEdition>ENTERPRISE</modifiedEdition>
+   <modifiedVersion>10.0.1</modifiedVersion>
+   <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>C:\Users\Reza Paramarta\Katalon Studio\Reqres_API_TEST_QA_Engineer_Venturo_RezaParamarta\Reqres_API_TEST_QA_Engineer_Venturo_RezaParamarta.prj</projectFileLocation>
+   <sourceContent>
+      <sourceFolderList>
+         <sourceFolderConfiguration>
+            <url>Include/scripts/groovy</url>
+         </sourceFolderConfiguration>
+      </sourceFolderList>
+      <systemFolderList>
+         <systemFolderConfiguration>
+            <url>Include/scripts/groovy</url>
+         </systemFolderConfiguration>
+         <systemFolderConfiguration>
+            <url>Include/features</url>
+         </systemFolderConfiguration>
+         <systemFolderConfiguration>
+            <url>Include/config</url>
+         </systemFolderConfiguration>
+      </systemFolderList>
+   </sourceContent>
+   <timeStampInProperties>false</timeStampInProperties>
+   <type>WEBSERVICE</type>
+</Project>
