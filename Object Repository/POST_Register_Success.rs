@@ -17,7 +17,7 @@
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
    <autoUpdateContent>false</autoUpdateContent>
-   <connectionTimeout>-1</connectionTimeout>
+   <connectionTimeout>0</connectionTimeout>
    <followRedirects>true</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
@@ -31,7 +31,7 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer reqres_ccd0d4951597487d9280005c6b6a7e9a</value>
+      <value>Bearer ${GlobalVariable.token}</value>
       <webElementGuid>cd1646fe-4088-4cec-94e7-2e99dfd54a58</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
@@ -43,7 +43,7 @@
       <webElementGuid>2d016b21-1d44-45e1-87f0-16f90c15159a</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>10.0.1</katalonVersion>
-   <maxResponseSize>-1</maxResponseSize>
+   <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>POST</restRequestMethod>
@@ -54,7 +54,7 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
+   <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

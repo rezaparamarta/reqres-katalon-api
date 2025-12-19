@@ -21,7 +21,7 @@
    <followRedirects>true</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;name\&quot;: \&quot;Reza Paramarta\&quot;,\n  \&quot;job\&quot;: \&quot;QA Engineer\&quot;\n}\n&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;name\&quot;: \&quot;${GlobalVariable.name}\&quot;,\n  \&quot;job\&quot;: \&quot;${GlobalVariable.job}\&quot;\n}\n&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -39,7 +39,7 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer reqres_ccd0d4951597487d9280005c6b6a7e9a</value>
+      <value>Bearer ${GlobalVariable.token}</value>
       <webElementGuid>f8ef938e-7cfc-4915-b205-426e7d0e617b</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>10.0.1</katalonVersion>

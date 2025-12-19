@@ -31,7 +31,7 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer reqres_ccd0d4951597487d9280005c6b6a7e9a</value>
+      <value>Bearer ${GlobalVariable.token}</value>
       <webElementGuid>0800f741-43a8-4555-ae47-fa7e6744f8d5</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
