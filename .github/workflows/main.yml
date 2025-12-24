@@ -23,7 +23,7 @@ jobs:
           dir
           cd Katalon_Studio_Windows_64-9.5.0
           dir
-          katalonc.bat ^
+          katalonc.exe ^
           -noSplash ^
           -runMode=console ^
           -projectPath="Reqres_API_TEST_QA_Engineer_Venturo_RezaParamarta.prj" ^
