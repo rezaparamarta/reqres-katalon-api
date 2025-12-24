@@ -1,0 +1,28 @@
+name: Katalon API Test
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  katalon-test:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Download Katalon Studio
+        run: |
+          curl -L -o katalon.zip https://download.katalon.com/9.5.0/Katalon_Studio_Windows_64-9.5.0.zip
+          tar -xf katalon.zip
+
+      - name: Run Katalon API Test Suite
+        run: |
+          Katalon_Studio_Windows_64-9.5.0\katalonc.bat ^
+          -noSplash ^
+          -runMode=console ^
+          -projectPath="Reqres_API_TEST_QA_Engineer_Venturo_RezaParamarta.prj" ^
+          -testSuitePath="Test Suites/TS_Reqres_API" ^
+          -executionProfile="default" ^
+          -browserType="Web Service"
