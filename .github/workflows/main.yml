@@ -1,33 +1,27 @@
 name: Katalon API Test
 
-on:
-  push:
-    branches: [ master ]
+on: [push]
 
 jobs:
   katalon-test:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Download Katalon Studio
+      - name: Download Katalon Runtime Engine
         run: |
-          curl -L -o katalon.zip https://download.katalon.com/9.5.0/Katalon_Studio_Windows_64-9.5.0.zip
-          tar -xf katalon.zip
+          curl -L -o katalon.tar.gz https://download.katalon.com/9.5.0/Katalon_Runtime_Engine_Linux_64-9.5.0.tar.gz
+          tar -xzf katalon.tar.gz
+          chmod +x katalonc
 
-      - name: Run Katalon API Test Suite
-        shell: cmd
+      - name: Run API Test Suite Collection
         run: |
-          Katalon_Studio_Windows_64-9.5.0\katalonc.exe ^
-          -noSplash ^
-          -runMode=console ^
-          -licenseRelease=true ^
-          -apiKey=%KATALON_API_KEY% ^
-          -projectPath="Reqres_API_TEST_QA_Engineer_Venturo_RezaParamarta.prj" ^
-          -testSuiteCollectionPath="Test Suite Collections/TSC_Reqres_API" ^
-          -executionProfile="default" ^
-          -browserType="Web Service"
-        env:
-          KATALON_API_KEY: ${{ secrets.KATALON_API_KEY }}
+          ./katalonc \
+          -noSplash \
+          -runMode=console \
+          -licenseRelease=true \
+          -apiKey=${{ secrets.KATALON_API_KEY }} \
+          -projectPath="$PWD/Reqres_API_TEST_QA_Engineer_Venturo_RezaParamarta.prj" \
+          -testSuiteCollectionPath="Test Suite Collections/TSC_Reqres_API" \
+          -executionProfile="default"
