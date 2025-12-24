@@ -1,21 +1,28 @@
-name: Katalon API Test
+name: Katalon API Test (CI)
 
-on: [push]
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
 
 jobs:
   katalon-test:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      # 1. Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
+      # 2. Download Katalon Runtime Engine (Linux)
       - name: Download Katalon Runtime Engine
         run: |
           curl -L -o katalon.tar.gz https://download.katalon.com/9.5.0/Katalon_Runtime_Engine_Linux_64-9.5.0.tar.gz
           tar -xzf katalon.tar.gz
           chmod +x katalonc
 
-      - name: Run API Test Suite Collection
+      # 3. Run Test Suite Collection (API)
+      - name: Run Katalon API Test Suite Collection
         run: |
           ./katalonc \
           -noSplash \
