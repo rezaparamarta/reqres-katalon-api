@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://reqres.in/'</initValue>
+      <initValue>'https://reqres.in'</initValue>
       <name>baseUrl</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -16,7 +16,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'janet.weaver@reqres.in'</initValue>
+      <initValue>''</initValue>
       <name>email</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM0OTEyYjI5ODhhZjAwMTU3OGU4YzAiLCJpYXQiOjE3NDgyNzU0OTl9.NVDGEjRE8s5RYeouLpRx4XTxf2rLPBRiDKRIwx9rggY'</initValue>
+      <name>Authorization</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

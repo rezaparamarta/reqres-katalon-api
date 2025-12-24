@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_Reres_API</name>
+   <name>TC_Post_Register</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>3a951d3c-4780-4671-985f-98a9f18d5a32</testCaseGuid>
+   <testCaseGuid>ed107d1a-0d4e-409f-a4a1-eee765472803</testCaseGuid>
 </TestCaseEntity>

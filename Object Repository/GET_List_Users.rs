@@ -3,7 +3,7 @@
    <description></description>
    <name>GET_List_Users</name>
    <tag></tag>
-   <elementGuidId>5d3e01ad-bb60-4b30-b501-9173418fbfbd</elementGuidId>
+   <elementGuidId>3b97ba9c-e03e-4896-9ad6-7ce7ccc2f53a</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -11,7 +11,7 @@
       <authorizationInfo>
          <entry>
             <key>bearerToken</key>
-            <value>reqres_ccd0d4951597487d9280005c6b6a7e9a</value>
+            <value>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM0OTEyYjI5ODhhZjAwMTU3OGU4YzAiLCJpYXQiOjE3NDgyNzU0OTl9.NVDGEjRE8s5RYeouLpRx4XTxf2rLPBRiDKRIwx9rggY</value>
          </entry>
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
@@ -20,27 +20,15 @@
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>true</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer ${GlobalVariable.token}</value>
-      <webElementGuid>0800f741-43a8-4555-ae47-fa7e6744f8d5</webElementGuid>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>5dd86afe-e90b-4b00-b4d5-53467c053281</webElementGuid>
+      <value>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM0OTEyYjI5ODhhZjAwMTU3OGU4YzAiLCJpYXQiOjE3NDgyNzU0OTl9.NVDGEjRE8s5RYeouLpRx4XTxf2rLPBRiDKRIwx9rggY</value>
+      <webElementGuid>f6cb92db-56e4-49c9-8db4-de23fbade8c8</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>10.0.1</katalonVersion>
    <maxResponseSize>0</maxResponseSize>

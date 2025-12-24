@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>GET_single_user</name>
+   <name>POST_Register</name>
    <tag></tag>
-   <elementGuidId>54d74121-7295-48ae-8f08-dde549110858</elementGuidId>
+   <elementGuidId>0edb0d3a-9db6-46db-8070-922017345a97</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -11,17 +11,17 @@
       <authorizationInfo>
          <entry>
             <key>bearerToken</key>
-            <value>reqres_ccd0d4951597487d9280005c6b6a7e9a</value>
+            <value>${GlobalVariable.Authorization}</value>
          </entry>
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>true</autoUpdateContent>
+   <autoUpdateContent>false</autoUpdateContent>
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>true</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;email\&quot;: \&quot;${email}\&quot;,\n  \&quot;password\&quot;: \&quot;pistol\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -31,8 +31,8 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer ${GlobalVariable.token}</value>
-      <webElementGuid>f11ac3df-c808-48a0-ab77-e6136501f713</webElementGuid>
+      <value>Bearer ${GlobalVariable.Authorization}</value>
+      <webElementGuid>d2fdd57d-aa9e-44a2-8ac7-4c3c597ee4da</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -40,14 +40,14 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>24f24e0b-7322-4cc3-bba6-9e81066978fa</webElementGuid>
+      <webElementGuid>7b90a66d-b18d-4891-ac18-ebea808a9915</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>10.0.1</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.baseUrl}/api/users/${GlobalVariable.userId}</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${GlobalVariable.baseUrl}/api/register</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -56,6 +56,13 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>'eve.holt@reqres.in'</defaultValue>
+      <description></description>
+      <id>6339e613-407a-4f59-8a2b-4ee4de4dcf8d</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
