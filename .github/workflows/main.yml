@@ -26,7 +26,7 @@ jobs:
           -runMode=console ^
           -licenseRelease=true ^
           -apiKey=%KATALON_API_KEY% ^
-          -projectPath="Reqres_API_TEST_QA_Engineer_Venturo_RezaParamarta.prj" ^
+          -projectPath="..\Reqres_API_TEST_QA_Engineer_Venturo_RezaParamarta.prj" ^
           -testSuitePath="Test Suites/TS_Reqres_API" ^
           -executionProfile="default" ^
           -browserType="Web Service"
